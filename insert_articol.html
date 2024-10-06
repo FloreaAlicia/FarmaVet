@@ -1,0 +1,56 @@
+<html>
+<head>
+    <title>FarmaVet</title>
+</head>
+
+<body>
+<center><h1>Introducere articol nou</h1></center>
+<form action="insert_art.php" enctype="multipart/form-data" method="POST">
+    <label for="cod_art">Cod articol (max 6 cifre): </label>
+      <input type="text" name="cod_art" value="">
+    <br><br>
+    <label for="tip_animal">Animalutul:</label>
+      <input type="radio" name="tip_animal" id="caine" value="caine">
+      <label for="caine">Caine</label>
+      <input type="radio" name="tip_animal" id="pisica" value="pisica">
+      <label for="pisica">Pisica</label>
+      <input type="radio" name="tip_animal" id="animale mici" value="animale mici">
+      <label for="animale mici">Animale mici</label>
+    <br><br>
+
+  <label for="denumire_articol">Denumire produs (max 30 caractere): </label>
+  <input type="text" name="denumire_articol" value="">
+  <br><br>
+
+  <label for="utilitate">Utilizare: </label>
+    <select name="utilitate" id="utilitate">
+        <option>Alege o optiune</option>
+        <option value="uscata">Mancare uscata</option>
+        <option value="umeda">Mancare umeda</option>
+        <option value="jucarie">Jucarie</option>
+        <option value="recompensa">Recompensa</option>
+        <option value="vaccin">Vaccin</option>
+    </select>
+  <br><br>
+
+  <label for="cantitate">Cantitate:</label>
+    <input type="text" name="cantitate" value="">
+  <br><br>
+  <label for="brand">Brand (max 30 caractere):</label>
+    <input type="text" name="brand" value="">
+  <br><br>
+  <label for="pret">Pret:</label>
+    <input type="text" name="pret" value="">
+  <br><br>
+  <label for="descriere">Descriere (max 500 caractere):</label><br>
+    <textarea name="descriere" id="descriere" cols="60" rows="6"></textarea>
+  <br><br>
+  <label for="file">Imagine articol:</label>
+    <input type="file" name="image" />
+    <input type="submit" name="submit" value="Adauga ARTICOL" />
+  <br><br>
+  <button onclick="history.back()">Back</button>
+  <!--input type="submit" name="Back" value="Back"-->
+</form>
+
+</body>
